@@ -7,21 +7,21 @@ var validacionFinal = document.getElementById("validacionFinal")
 botonVerificar.addEventListener("click", () => {
 
     if (isNaN(parseInt(inputUno.value))){
-        inputUno = 1
+        inputUno = 0
     } else if (parseInt(inputUno.value) != NaN){
         inputUno = parseInt(inputUno.value)
         console.log("Entro al else if 1")
     }
 
     if (isNaN(parseInt(inputDos.value))){
-        inputDos = 1
+        inputDos = 0
     } else if (parseInt(inputDos.value) != NaN){
         inputDos = parseInt(inputDos.value)
         console.log("Entro al else if 2")
     }
 
     if (isNaN(parseInt(inputTres.value))){
-        inputTres = 1
+        inputTres = 0
     } else if (parseInt(inputTres.value) != NaN){
         inputTres = parseInt(inputTres.value)
         console.log("Entro al else if 3")
@@ -31,7 +31,9 @@ botonVerificar.addEventListener("click", () => {
 
     if (sumaInt < 11){
         validacionFinal.innerHTML = `LLevas ${sumaInt} stickers`
+        setTimeout(function(){ location. reload() }, 2000);
     } else{
         validacionFinal.innerHTML = `LLevas demasiados stickers`
+        setTimeout(function(){ location. reload() }, 2000);
     }
 })
