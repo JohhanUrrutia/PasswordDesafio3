@@ -6,11 +6,11 @@ var validacionFinal = document.getElementById("validacionFinal")
 
 botonVerificar.addEventListener("click", () => {
 
-        inputUno = parseInt(inputUno.value)
-        inputDos = parseInt(inputDos.value)
-        inputTres = parseInt(inputTres.value)
+        inputUno1 = parseFloat(inputUno.value)
+        inputDos2 = parseFloat(inputDos.value)
+        inputTres3 = parseFloat(inputTres.value)
 
-    var sumaInt = inputUno + inputDos + inputTres
+    var sumaInt = inputUno1 + inputDos2 + inputTres3
 
     if (sumaInt <= 10){
         validacionFinal.innerHTML = `LLevas ${sumaInt} stickers`
